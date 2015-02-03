@@ -36,8 +36,6 @@
     <link href="http://vsjha.in/theme/css/pygments/native.css" rel="stylesheet">
     <link rel="stylesheet" href="http://vsjha.in/theme/css/style.css" type="text/css"/>
 
-        <link href="http://vsjha.in/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
-              title="/^blog$/ ATOM Feed"/>
     <!-- fonts go here -->
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Muli:300,400,400italic,300italic' rel='stylesheet' type='text/css'>
@@ -102,7 +100,7 @@
     
 </aside><!-- /.post-info -->            </div>
             <div class="entry-content">
-                <img alt="" src="images/pelican.png" />
+                <img alt="pelican-image" src="images/pelican.png" />
 <p>From a long time I was looking for a blogging solution which is not just
 hassle free to manage but also cheap and easy to host. At the same time I
 was is no mood to trade the configurability aspect for the above features.
@@ -148,28 +146,35 @@ It was really somethig which I was looking for. I can write articles on
 any plain text editor, which was a great plus. And there were many templates to
 chose from. Being static site it only had features which a static site can afford
 to have without an active application server.</p>
-<p>But there was a problem. It's not really a Jekyl issue, but rather a personal
+<p>But there was a problem. It's not really a Jekyll issue, but rather a personal
 taste. I did't know Ruby and for making any changes of higher order would require
 some Ruby knowledge. Though it's a nice language to learn (unlike PHP) but my
 priorities were not allowing me to go into that direction. I was just wondering
-whether is there anything like <em>PyJekyl</em> !!</p>
+whether is there anything like <em>PyJekyll</em> !!</p>
 </div>
 <div class="section" id="and-finally-the-pelican">
 <h2>And Finally the Pelican</h2>
 <p>The beauty of python is, you name it and you have it. And a static site
 generator was no exception either. It only took few google searches to
-reach <a class="reference external" href="http://docs.pelican.com">Pelican</a>. And it had almost everything which I wanted. It hardly
-took anytime to impress me to a point of no return. At a glance:</p>
+reach <a class="reference external" href="http://docs.pelican.com">Pelican</a>. And it had almost everything which I wished for. It hardly
+took anyt ime to impress me to a point of no return. At a glance:</p>
 <ul class="simple">
 <li>Had almost all essential features which a blog should have. (and did't have ones which I consider overkill)</li>
 <li>Templating was super easy because of Jinja2 templating system.</li>
 <li>I could write in <em>rst</em> format. I am more fluent in <em>rst</em> compared to <em>markdown</em>.</li>
 <li>I don't have to write in a WYSIWYG editor, comfort of <em>vim</em> was there to stay.</li>
 <li>Integration with almost all the cloud service out of box.</li>
+<li>Things like google analytics, disqus were present out of box.</li>
+<li>One of the best project documentations.</li>
 </ul>
-<p>Next was the theme hunt. I always wanted to do it myself rather than using a readymade (mostly for learning sake).
+</div>
+<div class="section" id="the-theme-hunt">
+<h2>The Theme Hunt</h2>
+<p>Next problem to solve was the theme hunt. I always wanted to do it myself rather than using a readymade theme
+(mostly for learning sake). One thing I must say that becuase of the relatively smaller community
+than the <a class="reference external" href="http://Jekyllrb.com">Jekyll</a>, the number of available themes (which are worth using also) were less.
 But I found an amazing theme which I could use as a great starting point. <a class="reference external" href="https://github.com/DandyDev/pelican-bootstrap3">Pelican-Bootstrap3</a> is an
-amazing project. It is a <a class="reference external" href="http://getbootstrap.com">Bootstrap</a> based theme (one more tech which I am comfortable with) and does
+awsome project. It is a <a class="reference external" href="http://getbootstrap.com">Bootstrap</a> based theme (one more keyword which I am comfortable at) and does
 just enough to make a great starting point. That doesn't mean it is not directly usable, in fact it looks
 pretty descent. It supports most of the Social stuff and cloud services. To name a few:</p>
 <ul class="simple">
@@ -177,13 +182,35 @@ pretty descent. It supports most of the Social stuff and cloud services. To name
 <li>Disqus for comment handling.</li>
 <li>AddThis - For adding social buttons.</li>
 </ul>
+<p>I modified that theme and created a new one and this site is currently using that.</p>
 </div>
 <div class="section" id="github-pelican-a-killer-combo">
 <h2>Github + Pelican a Killer Combo</h2>
-<p>I am using Github to host the blog which you are reading right now. It's a
-very easy to use it you work with git (All of us do). And you dont have to
-pay anthing for this. It is free !! All you need to pay if for domain and
-that too is not mandatory as long as you are happy with the gihub sub-domain.</p>
+<p>Since it is a <a class="reference external" href="http://docs.pelican.com">Pelican</a> produces static sites hence you really don't require any heavy
+server running your blog. A basic static file server with modest capabilities is just
+more enough to do the job. This blog is hosted on the <a class="reference external" href="www.github.com">github</a> which is totally free.
+That also means that apart from paying for purchasing a domain (that too is not mandatory)
+you don't need to spend a single penny.</p>
+<blockquote>
+So the total hosting cost for me was Rs 300 (approximately 3 USD), which is less that
+a cost for one Mc Donald Meal.</blockquote>
+</div>
+<div class="section" id="the-current-theme">
+<h2>The Current Theme</h2>
+<p>This theme is a fork of <a class="reference external" href="https://github.com/DandyDev/pelican-bootstrap3">Pelican-Bootstrap3</a> project. I corrected some markups and styled it
+a bit. This is still a work in progress but it is completely usable.</p>
+<p><a class="reference external" href="https://github.com/vsjha18/pelican-elegant">click here</a> to visit the project page. You can clone it as follows</p>
+<p>You can clone it like this:</p>
+<div class="highlight"><pre>git clone https://github.com/vsjha18/pelican-elegant.git
+</pre></div>
+<p>Make sure you have following lines in the pelicanconf.py files.</p>
+<div class="highlight"><pre><span class="n">DISPLAY_RECENT_POSTS_ON_SIDEBAR</span><span class="o">=</span><span class="bp">True</span>
+<span class="n">DISPLAY_CATEGORIES_ON_SIDEBAR</span><span class="o">=</span><span class="bp">True</span>
+<span class="n">DISPLAY_CATEGORIES_ON_MENU</span><span class="o">=</span><span class="bp">True</span>
+<span class="n">BOOTSTRAP_THEME</span> <span class="o">=</span> <span class="s">&#39;cosmo&#39;</span>
+<span class="n">BOOTSTRAP_NAVBAR_INVERSE</span><span class="o">=</span><span class="bp">True</span>
+</pre></div>
+<p>For rest of the things you can follow steps on the <a class="reference external" href="https://github.com/vsjha18/pelican-elegant">project page</a> and and <a class="reference external" href="http://docs.pelican.com">Pelican</a> manual.</p>
 </div>
 
             </div>
@@ -274,13 +301,13 @@ that too is not mandatory as long as you are happy with the gihub sub-domain.</p
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="http://vsjha.in/tag/blogging.html">
-                            blogging
+                        <a href="http://vsjha.in/tag/python.html">
+                            python
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="http://vsjha.in/tag/python.html">
-                            python
+                        <a href="http://vsjha.in/tag/blogging.html">
+                            blogging
                         </a>
                     </li>
                 </ul>
