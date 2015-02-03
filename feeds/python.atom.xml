@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>/^blog$/</title><link href="http://vsjha.in/" rel="alternate"></link><link href="http://vsjha.in/feeds/python.atom.xml" rel="self"></link><id>http://vsjha.in/</id><updated>2015-01-26T00:00:00+01:00</updated><entry><title>A Blog Using Pelican !</title><link href="http://vsjha.in/a-blog-using-pelican.html" rel="alternate"></link><updated>2015-01-26T00:00:00+01:00</updated><author><name>Vivek Jha</name></author><id>tag:vsjha.in,2015-01-26:a-blog-using-pelican.html</id><summary type="html">&lt;img alt="" src="images/pelican.png" /&gt;
+&lt;p&gt;From a long time I was looking for a blogging solution which is not just
+hassle free to manage but also cheap and easy to host. At the same time I
+was is no mood to trade the configurability aspect for the above features.
+And also I didn't want to learn any new technology just for the sake of
+maintiaing a blog.&lt;/p&gt;
+&lt;p&gt;I explored several options, and went through many articles which had monotonous
+titles like &amp;quot;5 best blogging framework ....&amp;quot;. Out of all this exercise two obvious
+choices stood out, viz. &lt;strong&gt;Wordpress&lt;/strong&gt; and &lt;strong&gt;Blogger&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Though they are very good solutions for the problem but somehow it did't match my taste.&lt;/p&gt;
+&lt;div class="section" id="the-wordpress"&gt;
+&lt;h2&gt;The Wordpress&lt;/h2&gt;
+&lt;p&gt;Beyond doubt this is the most popular blogging framework and probably
+the most feature rich also. But the main reason behind it's popularity is the
+strong community and the rich admin console which can be used to control
+most of the aspects of the site from the admin console. And this was the big reason
+for wide adoption of Wordpress becuase you really don't need to be techie to
+own a blog. Please with limited computer knowledge were able to manage and host
+their own blog.&lt;/p&gt;
+&lt;p&gt;I hunted down this option because of:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Too many features which I actually didn't need. I wanted to keep it just as simple as possible.&lt;/li&gt;
+&lt;li&gt;Configuring it would require me to learn PHP, which doesn't find a place in my technical roadmap. (at least after learning python!)&lt;/li&gt;
+&lt;li&gt;Hosting requires more money than I was ready to spend. (I told you it has to be super cheap)&lt;/li&gt;
+&lt;li&gt;Theaming also requires to understand the Worpress jargon which is overwhelming for me.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="blogger"&gt;
+&lt;h2&gt;Blogger&lt;/h2&gt;
+&lt;p&gt;This is also a nice framework and I used it for quite a while for running a
+puzzle blog. It was far simpler than &lt;em&gt;wordpress&lt;/em&gt; which I consider a plus but
+it was somewhat boring as well.&lt;/p&gt;
+&lt;p&gt;If you see blogger in last 5 years, nothing much has changed, this is very
+unlike all other Google products. Looks at it only feels that Google is using
+it as just one more medium to push their advertisements.&lt;/p&gt;
+&lt;p&gt;Very few templates to choose from and look and feel of all of them reminds to
+the web of 2005 era. Most of the widgets are only there for sake of increasing
+the number of widgets, very few are useful.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="static-site-generators"&gt;
+&lt;h2&gt;Static Site Generators&lt;/h2&gt;
+&lt;p&gt;This new concept really excited me when I heard about &lt;a class="reference external" href="http://Jekyllrb.com"&gt;Jekyll&lt;/a&gt; through Github.
+It was really somethig which I was looking for. I can write articles on
+any plain text editor, which was a great plus. And there were many templates to
+chose from. Being static site it only had features which a static site can afford
+to have without an active application server.&lt;/p&gt;
+&lt;p&gt;But there was a problem. It's not really a Jekyl issue, but rather a personal
+taste. I did't know Ruby and for making any changes of higher order would require
+some Ruby knowledge. Though it's a nice language to learn (unlike PHP) but my
+priorities were not allowing me to go into that direction. I was just wondering
+whether is there anything like &lt;em&gt;PyJekyl&lt;/em&gt; !!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="and-finally-the-pelican"&gt;
+&lt;h2&gt;And Finally the Pelican&lt;/h2&gt;
+&lt;p&gt;The beauty of python is, you name it and you have it. And a static site
+generator was no exception either. It only took few google searches to
+reach &lt;a class="reference external" href="http://docs.pelican.com"&gt;Pelican&lt;/a&gt;. And it had almost everything which I wanted. It hardly
+took anytime to impress me to a point of no return. At a glance:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Had almost all essential features which a blog should have. (and did't have ones which I consider overkill)&lt;/li&gt;
+&lt;li&gt;Templating was super easy because of Jinja2 templating system.&lt;/li&gt;
+&lt;li&gt;I could write in &lt;em&gt;rst&lt;/em&gt; format. I am more fluent in &lt;em&gt;rst&lt;/em&gt; compared to &lt;em&gt;markdown&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;I don't have to write in a WYSIWYG editor, comfort of &lt;em&gt;vim&lt;/em&gt; was there to stay.&lt;/li&gt;
+&lt;li&gt;Integration with almost all the cloud service out of box.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Next was the theme hunt. I always wanted to do it myself rather than using a readymade (mostly for learning sake).
+But I found an amazing theme which I could use as a great starting point. &lt;a class="reference external" href="https://github.com/DandyDev/pelican-bootstrap3"&gt;Pelican-Bootstrap3&lt;/a&gt; is an
+amazing project. It is a &lt;a class="reference external" href="http://getbootstrap.com"&gt;Bootstrap&lt;/a&gt; based theme (one more tech which I am comfortable with) and does
+just enough to make a great starting point. That doesn't mean it is not directly usable, in fact it looks
+pretty descent. It supports most of the Social stuff and cloud services. To name a few:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Google Analytics.&lt;/li&gt;
+&lt;li&gt;Disqus for comment handling.&lt;/li&gt;
+&lt;li&gt;AddThis - For adding social buttons.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="github-pelican-a-killer-combo"&gt;
+&lt;h2&gt;Github + Pelican a Killer Combo&lt;/h2&gt;
+&lt;p&gt;I am using Github to host the blog which you are reading right now. It's a
+very easy to use it you work with git (All of us do). And you dont have to
+pay anthing for this. It is free !! All you need to pay if for domain and
+that too is not mandatory as long as you are happy with the gihub sub-domain.&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="python"></category><category term="pelican"></category><category term="blogging"></category></entry></feed>

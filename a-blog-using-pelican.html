@@ -2,7 +2,7 @@
 <html lang="en"
 >
 <head>
-    <title>A Blog Using Pelican ! - /^.*$/</title>
+    <title>A Blog Using Pelican ! - /^blog$/</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -14,13 +14,13 @@
 
         <meta name="author" content="Vivek Jha" />
         <meta name="keywords" content="python,pelican,blogging" />
-        <meta name="description" content="From a long time I was looking for a blogging solution which is not just hassle free to manage but also cheap and easy to host. At the same time I was is no mood to trade the configurability aspect for the above features. And off course who wants to ..." />
+        <meta name="description" content="From a long time I was looking for a blogging solution which is not just hassle free to manage but also cheap and easy to host. At the same time I was is no mood to trade the configurability aspect for the above features. And also I didn&#39;t want ..." />
 
-        <meta property="og:site_name" content="/^.*$/" />
+        <meta property="og:site_name" content="/^blog$/" />
         <meta property="og:type" content="article"/>
         <meta property="og:title" content="A Blog Using Pelican !"/>
         <meta property="og:url" content="http://vsjha.in/a-blog-using-pelican.html"/>
-        <meta property="og:description" content="From a long time I was looking for a blogging solution which is not just hassle free to manage but also cheap and easy to host. At the same time I was is no mood to trade the configurability aspect for the above features. And off course who wants to ..."/>
+        <meta property="og:description" content="From a long time I was looking for a blogging solution which is not just hassle free to manage but also cheap and easy to host. At the same time I was is no mood to trade the configurability aspect for the above features. And also I didn&#39;t want ..."/>
         <meta property="article:published_time" content="2015-01-26" />
             <meta property="article:section" content="python" />
             <meta property="article:tag" content="python" />
@@ -36,6 +36,8 @@
     <link href="http://vsjha.in/theme/css/pygments/native.css" rel="stylesheet">
     <link rel="stylesheet" href="http://vsjha.in/theme/css/style.css" type="text/css"/>
 
+        <link href="http://vsjha.in/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="/^blog$/ ATOM Feed"/>
     <!-- fonts go here -->
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Muli:300,400,400italic,300italic' rel='stylesheet' type='text/css'>
@@ -53,7 +55,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a href="http://vsjha.in/" class="navbar-brand">
-/^.*$/            </a>
+/^blog$/            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
@@ -71,8 +73,8 @@
 <!-- End Banner -->
 <div id="wrapper" class="container-fluid">
     <div class="row">
-        <div id="lsidebar" class="col-md-1"></div>
-        <div id="middle" class="col-md-7">
+        <div id="lsidebar" class="col-md-2"></div>
+        <div id="middle" class="col-md-6">
         <main>
     <section id="content">
         <article>
@@ -100,29 +102,31 @@
     
 </aside><!-- /.post-info -->            </div>
             <div class="entry-content">
-                <img alt="" src="https://penguinblogposts.files.wordpress.com/2014/06/facebook-cover-image-02-1024x379.jpeg?w=1000&amp;h=379&amp;crop=1" />
+                <img alt="" src="images/pelican.png" />
 <p>From a long time I was looking for a blogging solution which is not just
 hassle free to manage but also cheap and easy to host. At the same time I
 was is no mood to trade the configurability aspect for the above features.
-And off course who wants to learn a new technology just becuase he wants to
-maintain a blog and on the same lines I wished that all of it I could get in
-<tt class="docutils literal">python</tt>.</p>
-<p>I explored several options, and went through many articles which had montonous
-titles like &quot;5 best blogging framework ....&quot;. Out of all this exercise two choices
-stood out and they were the giants of this domain, <strong>Wordpress</strong> and <strong>Blogger</strong>.</p>
-<p>Though they are very good solutions for the problem but somehow did't match my taste.</p>
+And also I didn't want to learn any new technology just for the sake of
+maintiaing a blog.</p>
+<p>I explored several options, and went through many articles which had monotonous
+titles like &quot;5 best blogging framework ....&quot;. Out of all this exercise two obvious
+choices stood out, viz. <strong>Wordpress</strong> and <strong>Blogger</strong>.</p>
+<p>Though they are very good solutions for the problem but somehow it did't match my taste.</p>
 <div class="section" id="the-wordpress">
 <h2>The Wordpress</h2>
-<p>Without any doubt this is the most popular blogging framework and probably
-the most feature rich also. But the main reason behind it's popularity is
-the rich admin console which can be used for almost all corners of the blog
-(not quite the way I would like). This benfit brings a lot of bloggers who
-are not essentially engineers on the Wordpress boat.</p>
+<p>Beyond doubt this is the most popular blogging framework and probably
+the most feature rich also. But the main reason behind it's popularity is the
+strong community and the rich admin console which can be used to control
+most of the aspects of the site from the admin console. And this was the big reason
+for wide adoption of Wordpress becuase you really don't need to be techie to
+own a blog. Please with limited computer knowledge were able to manage and host
+their own blog.</p>
 <p>I hunted down this option because of:</p>
 <ul class="simple">
 <li>Too many features which I actually didn't need. I wanted to keep it just as simple as possible.</li>
-<li>Configuring it would require me to learn PHP, which doesn't find a place in my technical roadmap.</li>
-<li>Hosting requires more money than I would have wished.</li>
+<li>Configuring it would require me to learn PHP, which doesn't find a place in my technical roadmap. (at least after learning python!)</li>
+<li>Hosting requires more money than I was ready to spend. (I told you it has to be super cheap)</li>
+<li>Theaming also requires to understand the Worpress jargon which is overwhelming for me.</li>
 </ul>
 </div>
 <div class="section" id="blogger">
@@ -130,38 +134,44 @@ are not essentially engineers on the Wordpress boat.</p>
 <p>This is also a nice framework and I used it for quite a while for running a
 puzzle blog. It was far simpler than <em>wordpress</em> which I consider a plus but
 it was somewhat boring as well.</p>
-<p>Very few templates were available and hosnestly almost all were bad. Making
-any serious change required you to learn the Google APIs and messing up with
-HTML for UI tweaks was also not the easiest thing to do.</p>
-<p>It felt to me that even google was not very serious about it becuase it still
-has the same feature and templates which were there around five years ago.</p>
+<p>If you see blogger in last 5 years, nothing much has changed, this is very
+unlike all other Google products. Looks at it only feels that Google is using
+it as just one more medium to push their advertisements.</p>
+<p>Very few templates to choose from and look and feel of all of them reminds to
+the web of 2005 era. Most of the widgets are only there for sake of increasing
+the number of widgets, very few are useful.</p>
 </div>
 <div class="section" id="static-site-generators">
 <h2>Static Site Generators</h2>
 <p>This new concept really excited me when I heard about <a class="reference external" href="http://Jekyllrb.com">Jekyll</a> through Github.
-It was really somethig which I was looking for. I can write on the system on
-any plain text editor. And there were many templates to chose from.</p>
-<p>But there was on problem. It's not really a Jekyl problem but it was related to
-me. I did't know Ruby and for making any changes of higher order would require
+It was really somethig which I was looking for. I can write articles on
+any plain text editor, which was a great plus. And there were many templates to
+chose from. Being static site it only had features which a static site can afford
+to have without an active application server.</p>
+<p>But there was a problem. It's not really a Jekyl issue, but rather a personal
+taste. I did't know Ruby and for making any changes of higher order would require
 some Ruby knowledge. Though it's a nice language to learn (unlike PHP) but my
-priorities were not allowing me to go into that direction. I was wondering
-whether is there any Jekyl like stuff available in Python.</p>
+priorities were not allowing me to go into that direction. I was just wondering
+whether is there anything like <em>PyJekyl</em> !!</p>
 </div>
 <div class="section" id="and-finally-the-pelican">
 <h2>And Finally the Pelican</h2>
-<p>After some google search, Pelican was not difficult to find. I used almost
-similar technologies which I already knew, like Jinja2 teamplates. It is
-really easy to tweak the templates and design one from scratch if you know
-Jinja2 well.</p>
-<p>Since it was a static site generator hence it didn't require any database
-setups.</p>
-<blockquote>
-I always considered databases to be an overkill for simple applications
-like blog !</blockquote>
-<p>Pelican didn't take much time to impress me to an extent that I started developing
-my own theme. I got an amazing starting point which is pelican-bootstrap3.
-If you know bootstrap then this project can prove to be a very good starting
-point. The theme supported all the fancy stuff like.</p>
+<p>The beauty of python is, you name it and you have it. And a static site
+generator was no exception either. It only took few google searches to
+reach <a class="reference external" href="http://docs.pelican.com">Pelican</a>. And it had almost everything which I wanted. It hardly
+took anytime to impress me to a point of no return. At a glance:</p>
+<ul class="simple">
+<li>Had almost all essential features which a blog should have. (and did't have ones which I consider overkill)</li>
+<li>Templating was super easy because of Jinja2 templating system.</li>
+<li>I could write in <em>rst</em> format. I am more fluent in <em>rst</em> compared to <em>markdown</em>.</li>
+<li>I don't have to write in a WYSIWYG editor, comfort of <em>vim</em> was there to stay.</li>
+<li>Integration with almost all the cloud service out of box.</li>
+</ul>
+<p>Next was the theme hunt. I always wanted to do it myself rather than using a readymade (mostly for learning sake).
+But I found an amazing theme which I could use as a great starting point. <a class="reference external" href="https://github.com/DandyDev/pelican-bootstrap3">Pelican-Bootstrap3</a> is an
+amazing project. It is a <a class="reference external" href="http://getbootstrap.com">Bootstrap</a> based theme (one more tech which I am comfortable with) and does
+just enough to make a great starting point. That doesn't mean it is not directly usable, in fact it looks
+pretty descent. It supports most of the Social stuff and cloud services. To name a few:</p>
 <ul class="simple">
 <li>Google Analytics.</li>
 <li>Disqus for comment handling.</li>
@@ -178,6 +188,16 @@ that too is not mandatory as long as you are happy with the gihub sub-domain.</p
 
             </div>
             <!-- /.entry-content -->
+    <hr />
+    <!-- AddThis Button BEGIN -->
+    <div class="addthis_toolbox addthis_default_style">
+            <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+            <a class="addthis_button_tweet"></a>
+            <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    </div>
+        <script type="text/javascript">var addthis_config = {"data_track_addressbar": true};</script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54bb929868226ac3"></script>
+    <!-- AddThis Button END -->
     <hr/>
     <section class="comments" id="comments">
         <h2>Comments</h2>
@@ -249,13 +269,13 @@ that too is not mandatory as long as you are happy with the gihub sub-domain.</p
             <li class="list-group-item block"><a href="http://vsjha.in/"><h4><i class="fa fa-tags"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group " id="tags">
                     <li class="list-group-item tag-4">
-                        <a href="http://vsjha.in/tag/blogging.html">
-                            blogging
+                        <a href="http://vsjha.in/tag/pelican.html">
+                            pelican
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="http://vsjha.in/tag/pelican.html">
-                            pelican
+                        <a href="http://vsjha.in/tag/blogging.html">
+                            blogging
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
@@ -279,30 +299,6 @@ that too is not mandatory as long as you are happy with the gihub sub-domain.</p
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-    <li class="list-group-item block"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
-      <ul class="list-group" id="links">
-        <li class="list-group-item">
-            <a href="http://getpelican.com/" target="_blank">
-                Pelican
-            </a>
-        </li>
-        <li class="list-group-item">
-            <a href="http://python.org/" target="_blank">
-                Python.org
-            </a>
-        </li>
-        <li class="list-group-item">
-            <a href="http://jinja.pocoo.org/" target="_blank">
-                Jinja2
-            </a>
-        </li>
-        <li class="list-group-item">
-            <a href="#" target="_blank">
-                You can modify those links in your config file
-            </a>
-        </li>
-      </ul>
-    </li>
     </ul>
 </section>
             </aside>
@@ -313,7 +309,7 @@ that too is not mandatory as long as you are happy with the gihub sub-domain.</p
    <div id="footer" class="container-fluid">
       <div class="row">
          <div class="col-md-10">&copy; 2015 Vivek Jha
-            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            &middot; Powered by <a href="https://github.com/vsjha18/bs3-elegant" target="_blank">bs3-elegant</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
             <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
          <div class="col-md-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
@@ -364,6 +360,17 @@ that too is not mandatory as long as you are happy with the gihub sub-domain.</p
         }());
     </script>
     <!-- End Disqus Code -->
+    <!-- Google Analytics Universal -->
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-59243939-1', '');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics Universal Code -->
 
 </body>
 </html>

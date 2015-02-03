@@ -2,7 +2,7 @@
 <html lang="en"
 >
 <head>
-    <title>Tags - /^.*$/</title>
+    <title>Tags - /^blog$/</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -14,11 +14,11 @@
         <meta name="author" content="Vivek Jha" />
 
     <!-- Open Graph tags -->
-        <meta property="og:site_name" content="/^.*$/" />
+        <meta property="og:site_name" content="/^blog$/" />
         <meta property="og:type" content="website"/>
-        <meta property="og:title" content="/^.*$/"/>
+        <meta property="og:title" content="/^blog$/"/>
         <meta property="og:url" content="http://vsjha.in"/>
-        <meta property="og:description" content="/^.*$/"/>
+        <meta property="og:description" content="/^blog$/"/>
 
 
     <!-- Bootstrap -->
@@ -28,6 +28,8 @@
     <link href="http://vsjha.in/theme/css/pygments/native.css" rel="stylesheet">
     <link rel="stylesheet" href="http://vsjha.in/theme/css/style.css" type="text/css"/>
 
+        <link href="http://vsjha.in/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="/^blog$/ ATOM Feed"/>
     <!-- fonts go here -->
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Muli:300,400,400italic,300italic' rel='stylesheet' type='text/css'>
@@ -45,7 +47,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a href="http://vsjha.in/" class="navbar-brand">
-/^.*$/            </a>
+/^blog$/            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
@@ -63,11 +65,11 @@
 <!-- End Banner -->
 <div id="wrapper" class="container-fluid">
     <div class="row">
-        <div id="lsidebar" class="col-md-1"></div>
-        <div id="middle" class="col-md-7">
+        <div id="lsidebar" class="col-md-2"></div>
+        <div id="middle" class="col-md-6">
         <main>
     <section id="tags">
-        <h1>Tags for /^.*$/</h1>
+        <h1>Tags for /^blog$/</h1>
         <div class="panel-group" id="accordion">            <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
@@ -145,13 +147,13 @@
             <li class="list-group-item block"><a href="http://vsjha.in/"><h4><i class="fa fa-tags"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group " id="tags">
                     <li class="list-group-item tag-4">
-                        <a href="http://vsjha.in/tag/blogging.html">
-                            blogging
+                        <a href="http://vsjha.in/tag/pelican.html">
+                            pelican
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="http://vsjha.in/tag/pelican.html">
-                            pelican
+                        <a href="http://vsjha.in/tag/blogging.html">
+                            blogging
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
@@ -175,30 +177,6 @@
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-    <li class="list-group-item block"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
-      <ul class="list-group" id="links">
-        <li class="list-group-item">
-            <a href="http://getpelican.com/" target="_blank">
-                Pelican
-            </a>
-        </li>
-        <li class="list-group-item">
-            <a href="http://python.org/" target="_blank">
-                Python.org
-            </a>
-        </li>
-        <li class="list-group-item">
-            <a href="http://jinja.pocoo.org/" target="_blank">
-                Jinja2
-            </a>
-        </li>
-        <li class="list-group-item">
-            <a href="#" target="_blank">
-                You can modify those links in your config file
-            </a>
-        </li>
-      </ul>
-    </li>
     </ul>
 </section>
             </aside>
@@ -209,7 +187,7 @@
    <div id="footer" class="container-fluid">
       <div class="row">
          <div class="col-md-10">&copy; 2015 Vivek Jha
-            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            &middot; Powered by <a href="https://github.com/vsjha18/bs3-elegant" target="_blank">bs3-elegant</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
             <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
          <div class="col-md-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
@@ -260,6 +238,17 @@
         }());
     </script>
     <!-- End Disqus Code -->
+    <!-- Google Analytics Universal -->
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-59243939-1', '');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics Universal Code -->
 
 </body>
 </html>
